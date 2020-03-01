@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h2 class="register-title">Register</h2>
     <div class="card-body">
       <div class="col-md-6 offset-md-3">
         <form v-on:submit.prevent="onSubmit">
@@ -14,15 +15,20 @@
           </div>
           <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" placeholder="Name..." v-model="username" />
+            <input type="text" class="form-control" placeholder="Username..." v-model="username" />
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Name..." v-model="password" />
+            <input type="password" class="form-control" placeholder="Password..." v-model="password" />
           </div>
           <div class="form-group">
-            <label>Password Again</label>
-            <input type="password" class="form-control" placeholder="Name..." v-model="passwordAgain" />
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirm Password..."
+              v-model="passwordAgain"
+            />
           </div>
 
           <button class="btn btn-success">Register</button>
@@ -93,11 +99,17 @@ export default {
 </script>
 
 <style scoped>
-label{
-  color: white
+label {
+  color: white;
 }
-button{
+button {
   background-color: transparent;
-  border-color: orange
+  border-color: orange;
+}
+.register-title {
+  color: orange !important;
+  font-size: 3vw;
+  margin-top: 20px;
+  font-family: "Bebas Neue", cursive;
 }
 </style>

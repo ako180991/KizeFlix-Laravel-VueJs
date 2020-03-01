@@ -11,7 +11,7 @@ window.axios.defaults.headers.common = {
 };
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'https://www.omdbapi.com/?apikey=61d07e3&page=1&type=movie&'
+// axios.defaults.baseURL = 'https://www.omdbapi.com/?apikey=61d07e3&page=1&type=movie&'
 
 let token = document.head.querySelector('meta[name="csrf-token"]');
 

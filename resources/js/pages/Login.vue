@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h2 class="login-title">Login</h2>
     <div class="card-body">
       <div class="col-md-6 offset-md-3">
         <form v-on:submit.prevent="onSubmit">
@@ -10,11 +11,11 @@
           </div>
           <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" placeholder="Name..." v-model="username" />
+            <input type="text" class="form-control" placeholder="Username..." v-model="username" />
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Name..." v-model="password" />
+            <input type="password" class="form-control" placeholder="Password..." v-model="password" />
           </div>
           <button class="btn btn-success">Login</button>
         </form>
@@ -57,7 +58,7 @@ export default {
           .post("auth/login", data)
           .then(response => {
             this.app.user = response.data;
-            this.$router.push("http://127.0.0.1:8000/#/");
+            this.$router.push("/");
           })
           .catch(error => {
             this.errors.push(error.response.data.error);
@@ -75,5 +76,11 @@ label {
 button {
   background-color: transparent;
   border-color: orange;
+}
+.login-title {
+  color: orange !important;
+  font-size: 3vw;
+  margin-top: 20px;
+  font-family: "Bebas Neue", cursive;
 }
 </style>

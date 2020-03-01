@@ -2158,6 +2158,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "login",
   props: ["app"],
@@ -2190,7 +2191,7 @@ __webpack_require__.r(__webpack_exports__);
         this.app.req.post("auth/login", data).then(function (response) {
           _this.app.user = response.data;
 
-          _this.$router.push("http://127.0.0.1:8000/#/");
+          _this.$router.push("/");
         })["catch"](function (error) {
           _this.errors.push(error.response.data.error);
         });
@@ -2270,6 +2271,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6990,7 +6997,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n.app[data-v-f348271a] {\n  top: 0;\n  left: 0;\n  background-size: cover;\n  text-align: center;\n  min-height: 100%;\n  position: fixed;\n  width: 100%;\n  z-index: -999;\n  background: #000000;\n  background: linear-gradient(to left, #434343, #000000);\n}\n.navContainer[data-v-f348271a] {\n  height: 100px;\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n}\n.content[data-v-f348271a] {\n  margin-top: 10%;\n}\n.navTitle[data-v-f348271a] {\n  color: orange;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search[data-v-f348271a] {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.footer[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  text-align: center;\n  height: 100%;\n  position: fixed;\n  width: 100%;\n}\n.github[data-v-f348271a] {\n  margin: 15px;\n}\n.linkedin[data-v-f348271a] {\n  margin: 15px;\n}\ninput[data-v-f348271a] {\n  width: 50%;\n  background-color: transparent;\n  color: white;\n}\n.input-container[data-v-f348271a] {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n.login[data-v-f348271a] {\n  align-self: center;\n  margin-right: 20px;\n}\n.navbar[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  justify-content: space-between;\n}\n@media (min-width: 0) {\n.flex.xs12[data-v-f348271a] {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 20%;\n}\n}\n", ""]);
+exports.push([module.i, "\n.app[data-v-f348271a] {\n  top: 0;\n  left: 0;\n  background-size: cover;\n  text-align: center;\n  min-height: 100%;\n  width: 100%;\n  z-index: -999;\n  background: #000000;\n  background: linear-gradient(to left, #434343, #000000);\n}\n.navContainer[data-v-f348271a] {\n  height: 100px;\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n}\n.content[data-v-f348271a] {\n  margin-top: 10%;\n}\n.navTitle[data-v-f348271a] {\n  color: orange;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search[data-v-f348271a] {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.footer[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  text-align: center;\n  height: 100%;\n  width: 100%;\n}\n.github[data-v-f348271a] {\n  margin: 15px;\n}\n.linkedin[data-v-f348271a] {\n  margin: 15px;\n}\ninput[data-v-f348271a] {\n  width: 50%;\n  background-color: transparent;\n  color: white;\n}\n.input-container[data-v-f348271a] {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n.login[data-v-f348271a] {\n  align-self: center;\n  margin-right: 20px;\n}\n.navbar[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  justify-content: space-between;\n}\n@media (min-width: 0) {\n.flex.xs12[data-v-f348271a] {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 20%;\n}\n}\n", ""]);
 
 // exports
 
@@ -7047,7 +7054,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-3b6adb30] {\n  color: white;\n}\nbutton[data-v-3b6adb30] {\n  background-color: transparent;\n  border-color: orange;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-3b6adb30] {\n  color: white;\n}\nbutton[data-v-3b6adb30] {\n  background-color: transparent;\n  border-color: orange;\n}\n.login-title[data-v-3b6adb30] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
 
 // exports
 
@@ -7085,7 +7092,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-364a2fac]{\n  color: white\n}\nbutton[data-v-364a2fac]{\n  background-color: transparent;\n  border-color: orange\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-364a2fac] {\n  color: white;\n}\nbutton[data-v-364a2fac] {\n  background-color: transparent;\n  border-color: orange;\n}\n.register-title[data-v-364a2fac] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
 
 // exports
 
@@ -39808,6 +39815,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _c("h2", { staticClass: "login-title" }, [_vm._v("Login")]),
+    _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
       _c("div", { staticClass: "col-md-6 offset-md-3" }, [
         _c(
@@ -39847,7 +39856,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Name..." },
+                attrs: { type: "text", placeholder: "Username..." },
                 domProps: { value: _vm.username },
                 on: {
                   input: function($event) {
@@ -39873,7 +39882,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "password", placeholder: "Name..." },
+                attrs: { type: "password", placeholder: "Password..." },
                 domProps: { value: _vm.password },
                 on: {
                   input: function($event) {
@@ -39974,6 +39983,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _c("h2", { staticClass: "register-title" }, [_vm._v("Register")]),
+    _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
       _c("div", { staticClass: "col-md-6 offset-md-3" }, [
         _c(
@@ -40039,7 +40050,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Name..." },
+                attrs: { type: "text", placeholder: "Username..." },
                 domProps: { value: _vm.username },
                 on: {
                   input: function($event) {
@@ -40065,7 +40076,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "password", placeholder: "Name..." },
+                attrs: { type: "password", placeholder: "Password..." },
                 domProps: { value: _vm.password },
                 on: {
                   input: function($event) {
@@ -40079,7 +40090,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-group" }, [
-              _c("label", [_vm._v("Password Again")]),
+              _c("label", [_vm._v("Confirm Password")]),
               _vm._v(" "),
               _c("input", {
                 directives: [
@@ -40091,7 +40102,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "password", placeholder: "Name..." },
+                attrs: { type: "password", placeholder: "Confirm Password..." },
                 domProps: { value: _vm.passwordAgain },
                 on: {
                   input: function($event) {
@@ -56094,8 +56105,8 @@ window.axios.defaults.headers.common = {
   'Accept': 'application/json',
   'Content-Type': 'application/json'
 };
-Vue.config.productionTip = false;
-axios.defaults.baseURL = 'https://www.omdbapi.com/?apikey=61d07e3&page=1&type=movie&';
+Vue.config.productionTip = false; // axios.defaults.baseURL = 'https://www.omdbapi.com/?apikey=61d07e3&page=1&type=movie&'
+
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {// window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
@@ -56774,6 +56785,9 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
+var fetchMovie = axios__WEBPACK_IMPORTED_MODULE_1___default.a.create({
+  baseURL: 'https://www.omdbapi.com/?apikey=61d07e3&page=1&type=movie&'
+});
 /* harmony default export */ __webpack_exports__["default"] = ({
   fetchMovieCollection: function fetchMovieCollection(name) {
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
@@ -56782,7 +56796,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('&s=' + name).then(function (response) {
+              return fetchMovie.get('&s=' + name).then(function (response) {
                 return response.data;
               });
 
@@ -56804,7 +56818,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('&i=' + id).then(function (response) {
+              return fetchMovie.get('&i=' + id).then(function (response) {
                 return response.data;
               });
 

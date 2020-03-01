@@ -60,7 +60,6 @@ export default {
   background-size: cover;
   text-align: center;
   min-height: 100%;
-  position: fixed;
   width: 100%;
   z-index: -999;
   background: #000000;
@@ -95,7 +94,6 @@ export default {
   background: linear-gradient(to right, #181818, #ba8b02);
   text-align: center;
   height: 100%;
-  position: fixed;
   width: 100%;
 }
 .github {
