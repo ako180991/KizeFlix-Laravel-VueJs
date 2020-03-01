@@ -2030,13 +2030,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "navbar",
   props: ["app"],
   data: function data() {
-    return {};
+    return {
+      searchString: ""
+    };
   },
   methods: {
+    searchMovie: function searchMovie() {
+      this.$router.push("/search/" + this.searchString);
+      this.searchString = "";
+    },
     logout: function logout() {
       var _this = this;
 
@@ -2045,6 +2057,11 @@ __webpack_require__.r(__webpack_exports__);
 
         _this.$router.push("/login");
       });
+    }
+  },
+  computed: {
+    dataAvailable: function dataAvailable() {
+      return this.searchString !== null && this.searchString !== "";
     }
   }
 });
@@ -7016,7 +7033,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\n.navbar-nav {\n  margin-right: 300%;\n}\n.navbar {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  margin-bottom: 50px\n}\n.navbar-brand {\n  color: orange!important;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
+exports.push([module.i, "\n.container {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\n.navbar-nav {\n  margin-right: 300%;\n}\n.navbar {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  margin-bottom: 50px;\n}\n.navbar-brand {\n  color: orange !important;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.input-container {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n", ""]);
 
 // exports
 
@@ -39677,7 +39694,40 @@ var render = function() {
               ])
             ])
           ]
-        )
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-container" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.searchString,
+                expression: "searchString"
+              }
+            ],
+            staticClass: "input is-warning",
+            attrs: { placeholder: "Search" },
+            domProps: { value: _vm.searchString },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.searchString = $event.target.value
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              attrs: { text: "", disabled: !_vm.dataAvailable },
+              on: { click: _vm.searchMovie }
+            },
+            [_c("span", { staticClass: "search" }, [_vm._v("Search")])]
+          )
+        ])
       ]
     )
   ])

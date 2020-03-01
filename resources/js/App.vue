@@ -49,7 +49,8 @@ export default {
         this.initiated = true;
       });
     }
-  }
+  },
+  
 };
 </script>
 

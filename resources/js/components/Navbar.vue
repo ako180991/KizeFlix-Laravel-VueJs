@@ -38,6 +38,12 @@
           </li>
         </ul>
       </div>
+      <div class="input-container">
+        <input class="input is-warning" placeholder="Search" v-model="searchString" />
+        <button text :disabled="!dataAvailable" @click="searchMovie">
+          <span class="search">Search</span>
+        </button>
+      </div>
     </nav>
   </div>
 </template>
@@ -47,15 +53,26 @@ export default {
   name: "navbar",
   props: ["app"],
   data() {
-    return {};
+    return {
+      searchString: ""
+    };
   },
 
   methods: {
+    searchMovie() {
+      this.$router.push("/search/" + this.searchString);
+      this.searchString = "";
+    },
     logout() {
       this.app.req.post("auth/logout").then(() => {
         this.app.user = null;
         this.$router.push("/login");
       });
+    }
+  },
+  computed: {
+    dataAvailable() {
+      return this.searchString !== null && this.searchString !== "";
     }
   }
 };
@@ -74,13 +91,23 @@ export default {
   background: #ba8b02;
   background: -webkit-linear-gradient(to right, #181818, #ba8b02);
   background: linear-gradient(to right, #181818, #ba8b02);
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 .navbar-brand {
-  color: orange!important;
+  color: orange !important;
   font-size: 5vw;
   margin-top: 20px;
   margin-left: 40px;
   font-family: "Bebas Neue", cursive;
+}
+.search {
+  font-size: 2vw;
+  margin: 10px;
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.input-container {
+  text-align-last: center;
+  padding: 20px;
 }
 </style>
