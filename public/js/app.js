@@ -2133,7 +2133,7 @@ __webpack_require__.r(__webpack_exports__);
         this.errors.push("Passwords do not matched !");
       }
 
-      if (!this.erros.length) {
+      if (!this.errors.length) {
         var data = {
           name: this.name,
           username: this.username,
@@ -37794,19 +37794,19 @@ var render = function() {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.usernam,
-                    expression: "usernam"
+                    value: _vm.username,
+                    expression: "username"
                   }
                 ],
                 staticClass: "form-control",
                 attrs: { type: "text", placeholder: "Name..." },
-                domProps: { value: _vm.usernam },
+                domProps: { value: _vm.username },
                 on: {
                   input: function($event) {
                     if ($event.target.composing) {
                       return
                     }
-                    _vm.usernam = $event.target.value
+                    _vm.username = $event.target.value
                   }
                 }
               })

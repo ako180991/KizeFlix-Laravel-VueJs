@@ -18,7 +18,7 @@
           </div>
           <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" placeholder="Name..." v-model="usernam" />
+            <input type="text" class="form-control" placeholder="Name..." v-model="username" />
           </div>
           <div class="form-group">
             <label>Password</label>
@@ -74,7 +74,7 @@ export default {
         this.errors.push("Passwords do not matched !");
       }
 
-      if (!this.erros.length) {
+      if (!this.errors.length) {
         const data = {
           name: this.name,
           username: this.username,
