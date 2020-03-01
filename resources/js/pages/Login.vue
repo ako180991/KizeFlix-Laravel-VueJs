@@ -1,9 +1,5 @@
 <template>
   <div class="container">
-    <div class="card">
-      <div class="card-header">Login</div>
-    </div>
-
     <div class="card-body">
       <div class="col-md-6 offset-md-3">
         <form v-on:submit.prevent="onSubmit">
@@ -61,7 +57,7 @@ export default {
           .post("auth/login", data)
           .then(response => {
             this.app.user = response.data;
-            this.$router.push("/");
+            this.$router.push("http://127.0.0.1:8000/#/");
           })
           .catch(error => {
             this.errors.push(error.response.data.error);
@@ -72,5 +68,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+label {
+  color: white;
+}
+button {
+  background-color: transparent;
+  border-color: orange;
+}
 </style>

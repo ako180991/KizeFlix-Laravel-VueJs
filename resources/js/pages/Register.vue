@@ -1,9 +1,5 @@
 <template>
   <div class="container">
-    <div class="card">
-      <div class="card-header">Register</div>
-    </div>
-
     <div class="card-body">
       <div class="col-md-6 offset-md-3">
         <form v-on:submit.prevent="onSubmit">
@@ -96,5 +92,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+label{
+  color: white
+}
+button{
+  background-color: transparent;
+  border-color: orange
+}
 </style>

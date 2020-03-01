@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">KizeFlix</a>
+      <a class="navbar-brand" href="/">KizeFlix</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -62,4 +62,25 @@ export default {
 </script>
 
 <style>
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.navbar-nav {
+  margin-right: 300%;
+}
+.navbar {
+  background: #ba8b02;
+  background: -webkit-linear-gradient(to right, #181818, #ba8b02);
+  background: linear-gradient(to right, #181818, #ba8b02);
+  margin-bottom: 50px
+}
+.navbar-brand {
+  color: orange!important;
+  font-size: 5vw;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-family: "Bebas Neue", cursive;
+}
 </style>
