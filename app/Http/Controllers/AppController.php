@@ -18,8 +18,8 @@ class AppController extends Controller
 
     public function login(Request $request)
     {
-        if (Auth::attempt(['username' => $request->$email, 'password' => $request->$password], true)) {
-            return reponse()->json(Auth::user(), 200);
+        if (Auth::attempt(['username' => $request->username, 'password' => $request->password], true)) {
+            return response()->json(Auth::user(), 200);
         } else {
             return response()->json(['error' => 'Could not log you in.'], 401);
         }
