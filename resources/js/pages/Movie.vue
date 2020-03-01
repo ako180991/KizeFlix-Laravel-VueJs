@@ -70,6 +70,8 @@ export default {
 .description {
   display: flex;
   align-items: center;
+  text-align: left;
+  justify-content: center
 }
 
 .posterContainer {

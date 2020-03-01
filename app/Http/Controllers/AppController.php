@@ -21,7 +21,7 @@ class AppController extends Controller
         if (Auth::attempt(['username' => $request->username, 'password' => $request->password], true)) {
             return response()->json(Auth::user(), 200);
         } else {
-            return response()->json(['error' => 'Could not log you in.'], 401);
+            return response()->json(['error' => 'Username or Password wrong !'], 401);
         }
     }
 
