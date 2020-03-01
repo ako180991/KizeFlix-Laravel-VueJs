@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="app"></div>
+    <div id="app"></div>
 
     <script>
         var BASE_URL = '{{ URL::to('/') }}';
