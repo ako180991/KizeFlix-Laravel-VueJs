@@ -1936,6 +1936,9 @@ __webpack_require__.r(__webpack_exports__);
       })
     };
   },
+  mounted: function mounted() {
+    this.init();
+  },
   methods: {
     init: function init() {
       var _this = this;
@@ -37526,7 +37529,7 @@ var render = function() {
                               "router-link",
                               {
                                 staticClass: "dropdown-item",
-                                attrs: { to: "/refister" }
+                                attrs: { to: "/register" }
                               },
                               [_vm._v("Register")]
                             )

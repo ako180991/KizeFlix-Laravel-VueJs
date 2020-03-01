@@ -13,7 +13,7 @@ class AppController extends Controller
     {
         $user = Auth::user();
 
-        return response()->json($user, 200);
+        return response()->json(['user' => $user], 200);
     }
 
     public function login(Request $request)
