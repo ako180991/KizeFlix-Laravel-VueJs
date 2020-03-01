@@ -2,7 +2,7 @@
   <div class="app">
     <navbar :app="this" class="mb-2"></navbar>
     <spinner v-if="loading"></spinner>
-    <div v-else-if="initiated">
+    <div class="content" v-else-if="initiated">
       <router-view :app="this" />
     </div>
     <div class="footer">
@@ -49,12 +49,15 @@ export default {
         this.initiated = true;
       });
     }
-  },
-  
+  }
 };
 </script>
 
 <style scoped>
+body {
+  margin: 0;
+}
+
 .app {
   top: 0;
   left: 0;
@@ -66,6 +69,9 @@ export default {
   background: #000000;
   background: -webkit-linear-gradient(to left, #434343, #000000);
   background: linear-gradient(to left, #434343, #000000);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .navContainer {
   height: 100px;
@@ -74,7 +80,8 @@ export default {
   background: linear-gradient(to right, #181818, #ba8b02);
 }
 .content {
-  margin-top: 10%;
+  margin-top: 5%;
+  flex: 1
 }
 .navTitle {
   color: orange;

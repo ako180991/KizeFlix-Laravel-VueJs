@@ -7014,7 +7014,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n.app[data-v-f348271a] {\n  top: 0;\n  left: 0;\n  background-size: cover;\n  text-align: center;\n  min-height: 100%;\n  width: 100%;\n  z-index: -999;\n  background: #000000;\n  background: linear-gradient(to left, #434343, #000000);\n}\n.navContainer[data-v-f348271a] {\n  height: 100px;\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n}\n.content[data-v-f348271a] {\n  margin-top: 10%;\n}\n.navTitle[data-v-f348271a] {\n  color: orange;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search[data-v-f348271a] {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.footer[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  text-align: center;\n  height: 100%;\n  width: 100%;\n}\n.github[data-v-f348271a] {\n  margin: 15px;\n}\n.linkedin[data-v-f348271a] {\n  margin: 15px;\n}\ninput[data-v-f348271a] {\n  width: 50%;\n  background-color: transparent;\n  color: white;\n}\n.input-container[data-v-f348271a] {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n.login[data-v-f348271a] {\n  align-self: center;\n  margin-right: 20px;\n}\n.navbar[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  justify-content: space-between;\n}\n@media (min-width: 0) {\n.flex.xs12[data-v-f348271a] {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 20%;\n}\n}\n", ""]);
+exports.push([module.i, "\nbody[data-v-f348271a] {\n  margin: 0;\n}\n.app[data-v-f348271a] {\n  top: 0;\n  left: 0;\n  background-size: cover;\n  text-align: center;\n  min-height: 100%;\n  width: 100%;\n  z-index: -999;\n  background: #000000;\n  background: linear-gradient(to left, #434343, #000000);\n  display: flex;\n  flex-direction: column;\n  min-height: 100vh;\n}\n.navContainer[data-v-f348271a] {\n  height: 100px;\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n}\n.content[data-v-f348271a] {\n  margin-top: 5%;\n  flex: 1\n}\n.navTitle[data-v-f348271a] {\n  color: orange;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search[data-v-f348271a] {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.footer[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  text-align: center;\n  height: 100%;\n  width: 100%;\n}\n.github[data-v-f348271a] {\n  margin: 15px;\n}\n.linkedin[data-v-f348271a] {\n  margin: 15px;\n}\ninput[data-v-f348271a] {\n  width: 50%;\n  background-color: transparent;\n  color: white;\n}\n.input-container[data-v-f348271a] {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n.login[data-v-f348271a] {\n  align-self: center;\n  margin-right: 20px;\n}\n.navbar[data-v-f348271a] {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  justify-content: space-between;\n}\n@media (min-width: 0) {\n.flex.xs12[data-v-f348271a] {\n    flex-basis: 100%;\n    flex-grow: 0;\n    max-width: 20%;\n}\n}\n", ""]);
 
 // exports
 
@@ -39526,7 +39526,12 @@ var render = function() {
       _vm.loading
         ? _c("spinner")
         : _vm.initiated
-        ? _c("div", [_c("router-view", { attrs: { app: this } })], 1)
+        ? _c(
+            "div",
+            { staticClass: "content" },
+            [_c("router-view", { attrs: { app: this } })],
+            1
+          )
         : _vm._e(),
       _vm._v(" "),
       _vm._m(0)
