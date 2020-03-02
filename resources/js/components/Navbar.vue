@@ -100,6 +100,12 @@ export default {
   margin-left: 40px;
   font-family: "Bebas Neue", cursive;
 }
+.nav-link {
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-item {
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
+}
 .search {
   font-size: 2vw;
   margin: 10px;

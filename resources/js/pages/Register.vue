@@ -19,7 +19,12 @@
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Password..." v-model="password" />
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password..."
+              v-model="password"
+            />
           </div>
           <div class="form-group">
             <label>Confirm Password</label>
@@ -31,7 +36,7 @@
             />
           </div>
 
-          <button class="btn btn-success">Register</button>
+          <button class="btn">Register</button>
         </form>
       </div>
     </div>
@@ -101,10 +106,15 @@ export default {
 <style scoped>
 label {
   color: white;
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
   background-color: transparent;
   border-color: orange;
+  color: white;
+}
+.btn:hover {
+  color: orange !important;
 }
 .register-title {
   color: orange !important;

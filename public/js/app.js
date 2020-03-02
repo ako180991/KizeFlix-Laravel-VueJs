@@ -2176,6 +2176,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "login",
   props: ["app"],
@@ -2288,6 +2293,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7033,7 +7043,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\n.navbar-nav {\n  margin-right: 300%;\n}\n.navbar {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  margin-bottom: 50px;\n}\n.navbar-brand {\n  color: orange !important;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.search {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.input-container {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.container {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n}\n.navbar-nav {\n  margin-right: 300%;\n}\n.navbar {\n  background: #ba8b02;\n  background: linear-gradient(to right, #181818, #ba8b02);\n  margin-bottom: 50px;\n}\n.navbar-brand {\n  color: orange !important;\n  font-size: 5vw;\n  margin-top: 20px;\n  margin-left: 40px;\n  font-family: \"Bebas Neue\", cursive;\n}\n.nav-link {\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n}\n.dropdown-item {\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n}\n.search {\n  font-size: 2vw;\n  margin: 10px;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n  color: white;\n}\n.input-container {\n  -moz-text-align-last: center;\n       text-align-last: center;\n  padding: 20px;\n}\n", ""]);
 
 // exports
 
@@ -7071,7 +7081,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-3b6adb30] {\n  color: white;\n}\nbutton[data-v-3b6adb30] {\n  background-color: transparent;\n  border-color: orange;\n}\n.login-title[data-v-3b6adb30] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-3b6adb30] {\n  color: white;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n}\nbutton[data-v-3b6adb30] {\n  background-color: transparent;\n  border-color: orange;\n  color: white;\n}\n.btn[data-v-3b6adb30]:hover {\n  color: orange !important;\n}\n.login-title[data-v-3b6adb30] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
 
 // exports
 
@@ -7109,7 +7119,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nlabel[data-v-364a2fac] {\n  color: white;\n}\nbutton[data-v-364a2fac] {\n  background-color: transparent;\n  border-color: orange;\n}\n.register-title[data-v-364a2fac] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
+exports.push([module.i, "\nlabel[data-v-364a2fac] {\n  color: white;\n  font-family: \"Quicksand\", Tahoma, Geneva, Verdana, sans-serif;\n}\nbutton[data-v-364a2fac] {\n  background-color: transparent;\n  border-color: orange;\n  color: white;\n}\n.btn[data-v-364a2fac]:hover {\n  color: orange !important;\n}\n.register-title[data-v-364a2fac] {\n  color: orange !important;\n  font-size: 3vw;\n  margin-top: 20px;\n  font-family: \"Bebas Neue\", cursive;\n}\n", ""]);
 
 // exports
 
@@ -39950,7 +39960,7 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _c("button", { staticClass: "btn btn-success" }, [_vm._v("Login")])
+            _c("button", { staticClass: "btn" }, [_vm._v("Login")])
           ]
         )
       ])
@@ -40170,9 +40180,7 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _c("button", { staticClass: "btn btn-success" }, [
-              _vm._v("Register")
-            ])
+            _c("button", { staticClass: "btn" }, [_vm._v("Register")])
           ]
         )
       ])

@@ -15,9 +15,14 @@
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Password..." v-model="password" />
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password..."
+              v-model="password"
+            />
           </div>
-          <button class="btn btn-success">Login</button>
+          <button class="btn">Login</button>
         </form>
       </div>
     </div>
@@ -72,10 +77,15 @@ export default {
 <style scoped>
 label {
   color: white;
+  font-family: "Quicksand", Tahoma, Geneva, Verdana, sans-serif;
 }
 button {
   background-color: transparent;
   border-color: orange;
+  color: white;
+}
+.btn:hover {
+  color: orange !important;
 }
 .login-title {
   color: orange !important;
