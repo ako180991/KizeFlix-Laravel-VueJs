@@ -19,8 +19,6 @@ php artisan serve
 
 OMDb Api
 
-![20% center](ressources/js/components/images/omdb.png)
-
 Link : http://www.omdbapi.com/
 
 ## Dependencies
