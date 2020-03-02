@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'AppController@home')->middleware('ip');
 
 Route::prefix('auth')->group(function () {
     Route::get('init', 'AppController@init');

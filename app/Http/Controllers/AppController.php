@@ -9,6 +9,10 @@ use App\User;
 
 class AppController extends Controller
 {
+    public function home() {
+        return view('welcome');
+    }
+
     public function init()
     {
         $user = Auth::user();
@@ -35,7 +39,7 @@ class AppController extends Controller
 
         $user = new User();
 
-        $user->name =$request->name;
+        $user->name = $request->name;
         $user->username = $request->username;
         $user->password = bcrypt($request->password);
         $user->save();
