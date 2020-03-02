@@ -7,6 +7,38 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Installation
+
+```bash
+composer install
+npm install
+php artisan serve   
+```
+## Api
+
+OMDb Api
+
+![20% center](src/assets/omdb.png)
+
+Link : http://www.omdbapi.com/
+
+## Dependencies
+
+```python
+npm install axios
+npm install vue-router
+npm install bulma
+npm install vue-simple-spinner
+```
+
+## Thanks
+
+Kizeo
+
+## Author
+
+Ouahid Aqodad
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
