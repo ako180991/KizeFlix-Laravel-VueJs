@@ -14,11 +14,12 @@ composer install
 npm install
 php artisan serve   
 ```
+
 ## Api
 
 OMDb Api
 
-![20% center](src/assets/omdb.png)
+![20% center](ressources/js/components/images/omdb.png)
 
 Link : http://www.omdbapi.com/
 
